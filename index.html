@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cocos 板塊介紹與地貌</title>
+    <style>
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            padding: 0;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 900px;
+            margin: auto;
+            background: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #007bff;
+            border-bottom: 3px solid #007bff;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #28a745;
+            border-left: 5px solid #28a745;
+            padding-left: 10px;
+            margin-top: 25px;
+        }
+        h3 {
+            color: #6c757d;
+            margin-top: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 15px;
+            background-color: #ffffff;
+        }
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #e9ecef;
+            color: #495057;
+            font-weight: bold;
+        }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        .note {
+            background-color: #ffeeba;
+            border-left: 5px solid #ffc107;
+            padding: 15px;
+            margin-top: 20px;
+            border-radius: 4px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>🌎 Cocos 板塊介紹與地貌 (The Cocos Plate)</h1>
+
+    <h2>板塊介紹 (Introduction to the Cocos Plate)</h2>
+    <p>科科斯板塊是一個<strong>小型</strong>的<strong>大洋</strong>構造板塊，位於太平洋東部，緊鄰中美洲西海岸。</p>
+    <ul>
+        <li><strong>名稱由來：</strong> 以位於其上的<strong>科科斯島</strong>（Cocos Island，屬於哥斯大黎加）命名。</li>
+        <li><strong>形成：：</strong> 它是約 2300 萬年前，古代的**法拉隆板塊**（Farallon Plate）破裂後所殘留下來的板塊之一，與南部的**納斯卡板塊**（Nazca Plate）一同形成。</li>
+        <li><strong>相對運動：：</strong> 該板塊正朝向**東北方**移動，並在中美洲下方隱沒。</li>
+    </ul>
+
+    <hr>
+
+    <h2>🗺️ 板塊邊界種類與地形景觀 (Plate Boundaries and Associated Landforms)</h2>
+    <p>科科斯板塊與周圍板塊的邊界類型不同，產生了多樣化的地質活動和地形：</p>
+
+    <h3>1. 會聚邊界 (Convergent Boundary) - 隱沒帶</h3>
+    <p>這是科科斯板塊最活躍、影響最大的邊界類型。</p>
+    <table>
+        <thead>
+            <tr>
+                <th>接壤板塊</th>
+                <th>邊界類型</th>
+                <th>運動方式</th>
+                <th>造成的地形景觀</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>北美洲板塊</strong> 及 <strong>加勒比海板塊</strong></td>
+                <td><strong>隱沒帶</strong> (Subduction Zone)</td>
+                <td>科科斯板塊（密度較大的海洋板塊）**隱沒**到北美洲板塊和加勒比海板塊下方。</td>
+                <td>
+                    <ul>
+                        <li>**海溝**：形成著名的**中美洲海溝** (Middle America Trench)。</li>
+                        <li>**火山弧**：形成沿著中美洲延伸的**中美洲火山弧** (Central America Volcanic Arc)，產生大量**火山**與**地震活動**。</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>2. 離散邊界 (Divergent Boundary) - 洋脊</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>接壤板塊</th>
+                <th>邊界類型</th>
+                <th>運動方式</th>
+                <th>造成的地形景觀</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>太平洋板塊</strong> (Pacific Plate)</td>
+                <td>**洋脊** (Mid-Ocean Ridge)</td>
+                <td>兩板塊**相互分離**（海床擴張），有新地殼產生。</td>
+                <td>
+                    <ul>
+                        <li>**中洋脊**：形成**東太平洋海隆** (East Pacific Rise)。</li>
+                    </ul>
+                </td>
+            </tr>
+            <tr>
+                <td><strong>納斯卡板塊</strong> (Nazca Plate)</td>
+                <td>**洋脊** (Mid-Ocean Ridge)</td>
+                <td>兩板塊**相互分離**。</td>
+                <td>
+                    <ul>
+                        <li>**海底擴張中心**：形成**加拉巴哥海隆** (Galapagos Rise)。</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>3. 轉形邊界 (Transform Boundary) - 轉形斷層</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>接壤板塊</th>
+                <th>邊界類型</th>
+                <th>運動方式</th>
+                <th>造成的地形景觀</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><strong>加勒比海板塊</strong> (Caribbean Plate)</td>
+                <td>**轉形斷層** (Transform Fault)</td>
+                <td>板塊**側向平移**，相互錯動。</td>
+                <td>
+                    <ul>
+                        <li>**巴拿馬斷裂帶** (Panama Fracture Zone)，主要為走滑斷層。</li>
+                    </ul>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+    <div class="note">
+        <strong>💡 總結：</strong> 科科斯板塊由於其隱沒作用，對中美洲地區的**火山**、**海溝**和**地震活動**產生了關鍵影響。
+    </div>
+
+</div>
+
+</body>
+</html>
