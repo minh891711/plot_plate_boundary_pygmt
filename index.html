@@ -67,6 +67,46 @@
             margin-top: 20px;
             border-radius: 4px;
         }
+        /* 新增 PyGMT 部分的樣式 */
+        .pygmt-section {
+            margin-top: 50px;
+            padding-top: 20px;
+            border-top: 2px dashed #ccc;
+        }
+        .step-box {
+            margin-bottom: 30px;
+            padding: 20px;
+            background: #fafafa;
+            border-radius: 8px;
+            border: 1px solid #eee;
+        }
+        .step-title {
+            font-weight: bold;
+            color: #d9534f;
+            margin-bottom: 10px;
+            display: block;
+        }
+        .step-img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 4px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+        .code-link {
+            display: inline-block;
+            background-color: #333;
+            color: #fff;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 4px;
+            margin-bottom: 20px;
+            font-size: 0.9rem;
+        }
+        .code-link:hover {
+            background-color: #555;
+        }
     </style>
 </head>
 <body>
@@ -173,6 +213,44 @@
 
     <div class="note">
         <strong>💡 總結：</strong> 科科斯板塊由於其隱沒作用，對中美洲地區的火山、海溝和地震活動產生了關鍵影響。
+    </div>
+
+    <div class="pygmt-section">
+        <h2>🎨 用 PyGMT 繪圖：地形、火山與地震分布</h2>
+        <p>透過 Python 的 PyGMT 套件，我們能精確地繪製出 Cocos 板塊的地質細節，包含地形起伏、活躍火山點以及歷史地震數據。</p>
+        
+        <a href="https://github.com/minh891711/plot_plate_boundary_pygmt/blob/main/pygmt_plot_plate_boundary.ipynb" target="_blank" class="code-link">🔗 查看完整程式碼 (Jupyter Notebook)</a>
+
+        <div class="step-box">
+            <span class="step-title">STEP 1: 初步繪製 Cocos 板塊範圍</span>
+            <p>設定經緯度座標，初步標記出科科斯板塊在東太平洋與中美洲交界的地理位置。</p>
+            
+
+[Image of tectonic plate boundary map showing Cocos plate location]
+
+            <img src="https://raw.githubusercontent.com/minh891711/2025_finalterm_report_geophysics/main/picture/HW10_2.png" alt="STEP 1" class="step-img">
+        </div>
+
+        <div class="step-box">
+            <span class="step-title">STEP 2: 疊加火山、地震與著名歷史震點</span>
+            <p>利用 Gemini 輔助優化程式碼，將中美洲火山弧的火山點、頻繁的小型地震以及歷史上著名的強震位置精確標註於圖上。</p>
+            
+            <img src="https://raw.githubusercontent.com/minh891711/2025_finalterm_report_geophysics/main/picture/HW10_3.png" alt="STEP 2" class="step-img">
+        </div>
+
+        <div class="step-box">
+            <span class="step-title">STEP 3: 引入全球地形模型 (ETOPOn)</span>
+            <p>修改地形渲染設定，讓海溝與洋脊的地形起伏更加立體，清晰呈現中美洲海溝的深邃。</p>
+            
+            <img src="https://raw.githubusercontent.com/minh891711/2025_finalterm_report_geophysics/main/picture/HW10_4.png" alt="STEP 3" class="step-img">
+        </div>
+
+        <div class="step-box">
+            <span class="step-title">STEP 4: 最終高解析度版本 (陸地與海洋整合)</span>
+            <p>調整最後參數，提高影像解析度並平衡陸地高度與海洋深度的色彩飽和度，完整呈現 Cocos 板塊隱沒系統的地貌全景。</p>
+            
+            <img src="https://raw.githubusercontent.com/minh891711/2025_finalterm_report_geophysics/main/picture/HW10_5.png" alt="最終版本" class="step-img">
+        </div>
     </div>
 
 </div>
